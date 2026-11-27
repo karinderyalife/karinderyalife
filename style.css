@@ -1,0 +1,29 @@
+/* The app's paper look, for the two web pages Play links to. */
+:root {
+  --paper: #fbf4e3;
+  --card: #fffaf0;
+  --ink: #33261b;
+  --ink-soft: #6b5643;
+  --line: #e6d9bd;
+  --teal: #175f5e;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink-soft);
+  font: 16px/1.6 'Nunito', 'Segoe UI', system-ui, sans-serif;
+  padding: 32px max(16px, env(safe-area-inset-left, 0px)) 64px;
+}
+main { max-width: 640px; margin: 0 auto; }
+.kicker { margin: 0; font-weight: 800; color: var(--teal); letter-spacing: .04em; }
+h1 { margin: 0 0 4px; color: var(--ink); font-size: 34px; line-height: 1.15; }
+h2 { margin: 28px 0 6px; color: var(--ink); font-size: 20px; }
+b { color: var(--ink); }
+a { color: var(--teal); }
+.updated { font-size: 14px; }
+table { width: 100%; border-collapse: collapse; background: var(--card); border: 2px solid var(--line); border-radius: 12px; }
+td { padding: 8px 12px; border-bottom: 1px dotted var(--line); vertical-align: top; }
+td:first-child { color: var(--ink); }
+td:last-child { text-align: right; font-weight: 700; color: var(--ink); }
+ol { padding-left: 22px; }
